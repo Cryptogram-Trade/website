@@ -23,6 +23,13 @@ We permit deposits between 1000 USD and 100,000 USD (or equivalent EUR, GBP...) 
 > A good practice is to transfer an amount that is almost unique.
 > eg: instead of depositing $75,000 you may prefer $14,969. This permits us to eeasily match your deposit with a maximal anonymity for you.
 
+## Manage your cryptos from Shrimpy
+
+Shrimpy is a great way to deal with crypto via porrtrfolios.
+It provides sustainable tools to manage your daily trades.
+
+Cryptogram goes one step further and provides extra tools to save money and improve the Shrimpy app.
+
 
 ### Shrimpy augmented
 
@@ -33,6 +40,8 @@ Shrimpy is privacy friendly (they never ask who you are) and connects to many ex
 
 At Cryptogram we made tools to provide you with a better and more advanced features to enrich your Shrimpy experience.
 We're still a little secret about that and we'll come with some news about these features around end of April.
+
+### Cryptogram on Shrimpy
 
 > Scoop: Our clients will soon be able to trade their Cryptogram account with Shrimpy!
 
