@@ -8,20 +8,28 @@ Our team work hard for that, one day at a time.
 
 ## Buy Crypto without a KYC
 
-Do you need to buy crypto and you don't want to be verified?
-Just send us your payment via bank wire and we convert it to stable coin before transfering it back to you.
-The only charge is 8% of the value at the time of conversion!
+Some of our clients need to deal with crypto and cannot be verified users.
+For these clients Cryptogram provides a great help thanks to our diverse partners.
+
+We work with Coinbase Pro, Kraken and other great crypto exchange in order to send your Fiat.
+
+We will provide you with a temporary Fiat deposit account in one of these exchange.
+We then convert it to stable coin before transfering it back to your personal account.
+The only fee is a flat 8% of the value at the time of conversion with no volatility!
+
 
 ### How to proceed?
 
 1. Get in touch with the team mentioning how much you want to transfer and your USDT address
-2. Send your Fiat money with the exact reference and amount mentioned. Make an immediate transfer if your bank permits
-3. We convert your Fiat to stable Crypto (USDT or one of your choice) and send it to the address you provided
+2. Send your Fiat money with the exact reference and amount mentioned. Make an immediate transfer if your bank permits (available in a few minutes) or a regular transfer (one to 5 working days).
+3. We convert your Fiat to stable Crypto (USDT or one of your choice) and send it to the wallet address you provided.
 
-We permit deposits between 1000 USD and 100,000 USD (or equivalent EUR, GBP...) at a time.
+You may deposit any amount up to 100,000 USD (or equivalent EUR, GBP...) at a time.
+However for amount below $2,500 a flat fee of 200USDT will be charged.
 
-> A good practice is to transfer an amount that is almost unique.
-> eg: instead of depositing $75,000 you may prefer $14,969. This permits us to eeasily match your deposit with a maximal anonymity for you.
+> A good practice is to transfer an amount that makes it almost unique.
+> eg: instead of depositing $75,000 you may prefer to deposit $74,969. This permits our partner or ourselves to easily find and match your deposit with a full anonymity for you.
+
 
 ## Manage your cryptos from Shrimpy
 
