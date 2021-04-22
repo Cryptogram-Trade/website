@@ -59,3 +59,11 @@ class SiteMapView(TemplateView):
 class RobotsView(TemplateView):
     template_name = "robots.txt"
     content_type = "text/plain"
+
+
+class BlogView(TemplateView):
+    template_name = "blog.html"
+
+    def get_template_names(self):
+        slug = self.kwargs.get("slug")
+        return f"blog/{slug}.html"

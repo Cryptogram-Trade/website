@@ -84,7 +84,7 @@ class User(AbstractUser):
             logger.warning(
                 "Warning: Bypassing Stripe integration since BYPASS_STRIPE is set to True. \n"
                 "To test your Stripe integration, make sure to set up BYPASS_STRIPE to False.\n"
-                "Learn more at: https://getlaunchr.com/docs/payments/"
+                "Learn more at: https://cryptomgram.com/docs/payments/"
             )
             return settings.PLANS[settings.TRIAL_PLAN_KEY]
         if self.stripe_plan:
@@ -116,7 +116,7 @@ class User(AbstractUser):
                 f"Unable to find the feature with feature_key '{feature_key}' for the plan \n"
                 f"with the uuid '{plan_uuid}'. Make sure to add it to the features list in \n"
                 f"your settings.\n"
-                f"See: https://getlaunchr.com/docs/subscriptions/#can_use_feature"
+                f"See: https://cryptomgram.com/docs/subscriptions/#can_use_feature"
             )
         return False
 
@@ -128,7 +128,7 @@ class User(AbstractUser):
         raise ImproperlyConfigured(
             f"Unable to find a configured plan for the stripe_id '{stripe_id}'.\n"
             f"Make sure to add the 'stripe_id' to one of your plans in your settings.\n"
-            f"See: https://getlaunchr.com/docs/subscriptions/#get_plan_by_stripe_id"
+            f"See: https://cryptomgram.com/docs/subscriptions/#get_plan_by_stripe_id"
         )
 
     @staticmethod
@@ -138,7 +138,7 @@ class User(AbstractUser):
             raise ImproperlyConfigured(
                 f"Unable to get the stripe_id for the plan with the key '{plan_key}'.\n"
                 f"Make sure to set the 'stripe_id' in your settings correctly.\n"
-                f"See: https://getlaunchr.com/docs/subscriptions/#get_stripe_plan_id_by_key"
+                f"See: https://cryptomgram.com/docs/subscriptions/#get_stripe_plan_id_by_key"
             )
         return stripe_id
 

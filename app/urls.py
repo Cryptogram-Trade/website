@@ -3,6 +3,7 @@ from django.urls import path, include
 
 from views import (
     HomeView,
+    BlogView,
     TermsView,
     PrivacyView,
     SupportView,
@@ -15,6 +16,11 @@ urlpatterns = [
         route='',
         view=HomeView.as_view(),
         name="home"
+    ),
+    path(
+        route='blog/<slug>',
+        view=BlogView.as_view(),
+        name="blog"
     ),
     path(
         route='terms-of-service/',

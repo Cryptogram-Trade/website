@@ -1,9 +1,48 @@
-{% extends "pages/base.html" %}
-{% load static %}
 
-{% block title %}Buy Bitcoin Anonymously{% endblock %}
+<!doctype html>
+<html class="" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buy Bitcoin Anonymously – Private Crypto Trade</title>
+  <meta name="description" content="">
+  <link href="static/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/css/style.css" rel="stylesheet">
+  <link href="http://localhost:8000/static/images/c-bordered.svg" rel="icon" type="image/svg" sizes="180x180">
+</head>
+<body class="">
 
-{% block content %}
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-main bg-gradient">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img height="48px" src="static/images/cryptogram-white.svg"/>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto lg-mb-2 mb-lg-0 px-lg-5">
+          <li class="nav-item pt-lg-2">
+            <a class="nav-link" href="index.html#pricing">Pricing</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:8000/auth/login/">Login &nbsp;</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-block d-lg-none" href="http://localhost:8000/auth/signup/">Sign Up</a>
+              <a class="btn btn-success d-none d-lg-block" href="http://localhost:8000/auth/signup/">Sign Up</a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
 
   <div class="hero bg-gradient">
     <div class="container content">
@@ -16,7 +55,7 @@
             <br>stay safe and private.
           </p>
           <div class="pt-4">
-            <a class="btn btn-success" href="{% url "account_signup" %}">Sign Up</a>
+            <a class="btn btn-success" href="http://localhost:8000/auth/signup/">Sign Up</a>
             <a href="https://netflix.com/" class="p-3" target="_blank">Do nothing.</a>
           </div>
         </div>
@@ -2906,7 +2945,239 @@
           <p class="text-lead">Opportunities don't happen, you create them.</p>
         </div>
       </div>
-      {% include "shared/plans.html" %}
+      <div class="row">
+  
+    
+      <div class="col-md-4 col-sm-12">
+        <div class="card text-center mb-5">
+          <h3>Starter</h3>
+          <div class="price">
+            <span class="currency">$</span>
+            <span class="price">0</span>
+          </div>
+          <ul class="features">
+            
+              <li>
+                
+                  <div class="feature-box checked">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                    </svg>
+                  </div>
+                
+
+                <span class="feature">
+                  Follow regular Binance leaders from Binance.us
+                </span>
+
+              </li>
+            
+              <li>
+                
+                  <div class="feature-box checked">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                    </svg>
+                  </div>
+                
+
+                <span class="feature">
+                  Pay as you go
+                </span>
+
+              </li>
+            
+          </ul>
+          <div class="subscribe">
+            
+              <button class="checkout btn btn-outline-dark" data-price="">
+                Select
+              </button>
+            
+            
+          </div>
+        </div>
+      </div>
+    
+  
+    
+      <div class="col-md-4 col-sm-12">
+        <div class="card text-center mb-5">
+          <h3>Basic</h3>
+          <div class="price">
+            <span class="currency">$</span>
+            <span class="price">9.99</span>
+          </div>
+          <ul class="features">
+            
+              <li>
+                
+                  <div class="feature-box checked">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                    </svg>
+                  </div>
+                
+
+                <span class="feature">
+                  Feature 1
+                </span>
+
+              </li>
+            
+              <li>
+                
+                  <div class="feature-box checked">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                    </svg>
+                  </div>
+                
+
+                <span class="feature">
+                  Feature 2
+                </span>
+
+              </li>
+            
+              <li>
+                
+                  <div class="feature-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                  </div>
+                
+
+                <span class="feature">
+                  Feature 3
+                </span>
+
+              </li>
+            
+              <li>
+                
+                  <div class="feature-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                  </div>
+                
+
+                <span class="feature">
+                  Feature 4
+                </span>
+
+              </li>
+            
+          </ul>
+          <div class="subscribe">
+            
+              <button class="checkout btn btn-outline-dark" data-price="">
+                Select
+              </button>
+            
+            
+          </div>
+        </div>
+      </div>
+    
+  
+    
+      <div class="col-md-4 col-sm-12">
+        <div class="card text-center mb-5">
+          <h3>Pro</h3>
+          <div class="price">
+            <span class="currency">$</span>
+            <span class="price">19.99</span>
+          </div>
+          <ul class="features">
+            
+              <li>
+                
+                  <div class="feature-box checked">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                    </svg>
+                  </div>
+                
+
+                <span class="feature">
+                  Feature 1
+                </span>
+
+              </li>
+            
+              <li>
+                
+                  <div class="feature-box checked">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                    </svg>
+                  </div>
+                
+
+                <span class="feature">
+                  Feature 2
+                </span>
+
+              </li>
+            
+              <li>
+                
+                  <div class="feature-box checked">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                    </svg>
+                  </div>
+                
+
+                <span class="feature">
+                  Feature 3
+                </span>
+
+              </li>
+            
+              <li>
+                
+                  <div class="feature-box checked">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                    </svg>
+                  </div>
+                
+
+                <span class="feature">
+                  Feature 4
+                </span>
+
+              </li>
+            
+          </ul>
+          <div class="subscribe">
+            
+              <button class="checkout btn btn-outline-dark" data-price="">
+                Select
+              </button>
+            
+            
+          </div>
+        </div>
+      </div>
+    
+  
+</div>
+
     </div>
 
   </section>
@@ -2919,9 +3190,36 @@
             Shrimpy's greatest leaders are on Binance. As a US citizen you
             have no access to them. Of course you could
           </p>
-          <a class="mt-5 btn btn-lg btn-primary" href="{% url "account_signup" %}">Sign Up</a>
+          <a class="mt-5 btn btn-lg btn-primary" href="http://localhost:8000/auth/signup/">Sign Up</a>
         </div>
       </div>
     </div>
   </section>
-{% endblock %}
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <img height="28px" src="http://localhost:8000/static/images/logo_white.png"/>
+        </div>
+        <div class="col-sm-6">
+          <a href="http://localhost:8000/support/" class="text-white text-decoration-none float-end">Support</a>
+        </div>
+        <div class="mt-4 mx-3">
+          <hr/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text-center copy">
+          &copy; 2021 Cryptogram Ltd.
+          <a href="http://localhost:8000/terms-of-service/" class="text-white-50">Terms of Service</a> &nbsp;·&nbsp;
+          <a href="http://localhost:8000/privacy-policy/" class="text-white-50">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

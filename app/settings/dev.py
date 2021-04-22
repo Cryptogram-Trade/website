@@ -22,7 +22,7 @@ DJSTRIPE_WEBHOOK_SECRET = os.environ.get("STRIPE_WEBHOOK_SECRET")
 # todo: update your plans here
 # use the stripe dashboard to create plans for this project,
 # then fill them in here attach them to your app
-# To configure payments, take a look at: https://getlaunchr.com/docs/payments/
+# To configure payments, take a look at: https://cryptogram.com/docs/payments/
 PLANS["starter"]['stripe_id'] = ''
 PLANS["basic"]['stripe_id'] = ''
 PLANS["pro"]['stripe_id'] = ''

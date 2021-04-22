@@ -151,9 +151,9 @@ LOGIN_URL = reverse_lazy("account_login")
 # SITE SETTINGS
 ########################################
 # todo: set your site name, your country and your support email here
-SITE_NAME = "launchr"
-SITE_LOCATION = "United States"
-SUPPORT_EMAIL = "support@example.com"
+SITE_NAME = "Cryptogram"
+SITE_LOCATION = "Cyprus"
+SUPPORT_EMAIL = "support@cryptogram.com"
 
 ########################################
 # PAYMENTS
@@ -164,7 +164,7 @@ DJSTRIPE_FOREIGN_KEY_TO_FIELD = "id"
 # todo: set your trial length here
 TRIAL_DAYS = 14
 # todo: update your plans here
-# To configure payments, take a look at: https://getlaunchr.com/docs/payments/
+# To configure payments, take a look at: https://cryptogram.com/docs/payments/
 PLANS = {
     # this is the plans unique key. if you change the key here,
     # you also need to change the key in your environment settings (settings/dev.py &
@@ -182,7 +182,7 @@ PLANS = {
         # on the pricing and subscription page.
         "available": True,
         # the recurring price for this plan
-        "price": "4.99",
+        "price": "0",
         # the features this plan has are listed here.
         "features": [
             {
@@ -190,26 +190,16 @@ PLANS = {
                 # is displayed
                 "enabled": True,
                 # the text as it is displayed for end users
-                "text": "Feature 1",
+                "text": "Follow regular Binance leaders from Binance.us",
                 # the unique key this feature has. For a user which is
                 # subscribed to a plan, we can call the user.can_use_feature('feature_1')
                 # function to determine if the user can use this feature.
-                "key": "feature_1"
+                "key": "user.shrimpy_enabled"
             },
             {
-                "enabled": False,
-                "text": "Feature 2",
+                "enabled": True,
+                "text": "Pay as you go",
                 "key": "feature_2"
-            },
-            {
-                "enabled": False,
-                "text": "Feature 3",
-                "key": "feature_3"
-            },
-            {
-                "enabled": False,
-                "text": "Feature 4",
-                "key": "feature_4"
             },
         ]
     },
