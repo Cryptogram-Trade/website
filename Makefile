@@ -9,5 +9,5 @@ deploy:
 		git pull		&&\
 		docker-compose down &&\
 		docker-compose up -d  &&\
-		@echo 'completed!'"
+		echo 'completed!'"
 	@echo "App deployed"

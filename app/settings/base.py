@@ -186,20 +186,19 @@ PLANS = {
         # the features this plan has are listed here.
         "features": [
             {
-                # if the feature is enabled, a green checkmark
-                # is displayed
                 "enabled": True,
-                # the text as it is displayed for end users
                 "text": "Follow regular Binance leaders from Binance.us",
-                # the unique key this feature has. For a user which is
-                # subscribed to a plan, we can call the user.can_use_feature('feature_1')
-                # function to determine if the user can use this feature.
                 "key": "user.shrimpy_enabled"
             },
             {
                 "enabled": True,
-                "text": "Pay as you go",
-                "key": "feature_2"
+                "text": "Copy your leader's portfolio",
+                "key": "copy",
+            },
+            {
+                "enabled": False,
+                "text": "Live-update your portfolio with the leader's",
+                "key": "liveupdate",
             },
         ]
     },
@@ -211,23 +210,13 @@ PLANS = {
         "features": [
             {
                 "enabled": True,
-                "text": "Feature 1",
-                "key": "feature_1"
+                "text": "Follow leaders through your Shrimpy account",
+                "key": "shrimpy"
             },
             {
                 "enabled": True,
-                "text": "Feature 2",
-                "key": "feature_2"
-            },
-            {
-                "enabled": False,
-                "text": "Feature 3",
-                "key": "feature_3"
-            },
-            {
-                "enabled": False,
-                "text": "Feature 4",
-                "key": "feature_4"
+                "text": "Live-update your portfolio with the leader's",
+                "key": "liveupdate",
             },
         ]
     },
@@ -239,23 +228,13 @@ PLANS = {
         "features": [
             {
                 "enabled": True,
-                "text": "Feature 1",
-                "key": "feature_1"
+                "text": "Follow leaders without a Shrimpy subscription",
+                "key": "no_shrimpy"
             },
             {
                 "enabled": True,
-                "text": "Feature 2",
-                "key": "feature_2"
-            },
-            {
-                "enabled": True,
-                "text": "Feature 3",
-                "key": "feature_3"
-            },
-            {
-                "enabled": True,
-                "text": "Feature 4",
-                "key": "feature_4"
+                "text": "Copy unlimited portfolios from leaders",
+                "key": "unlimited"
             },
         ]
     }
