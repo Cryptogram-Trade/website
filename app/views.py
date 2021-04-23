@@ -10,23 +10,16 @@ class HomeView(TemplateView):
     template_name = "pages/home.html"
 
 
-class TermsView(TemplateView):
-    template_name = "pages/tos.html"
+class PageView(TemplateView):
 
     def get_context_data(self, **kwargs):
-        data = super(TermsView, self).get_context_data(**kwargs)
-        data['company'] = settings.SITE_NAME
-        data['country'] = settings.SITE_LOCATION
+        data = super().get_context_data(**kwargs)
+        data['settings'] = settings
         return data
 
-
-class PrivacyView(TemplateView):
-    template_name = "pages/privacy-policy.html"
-
-    def get_context_data(self, **kwargs):
-        data = super(PrivacyView, self).get_context_data(**kwargs)
-        data['company'] = settings.SITE_NAME
-        return data
+    def get_template_names(self):
+        slug = self.kwargs.get("slug")
+        return f"pages/{slug}.html"
 
 
 class SupportView(FormView):

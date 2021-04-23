@@ -4,8 +4,7 @@ from django.urls import path, include
 from views import (
     HomeView,
     BlogView,
-    TermsView,
-    PrivacyView,
+    PageView,
     SupportView,
     SiteMapView,
     RobotsView
@@ -23,14 +22,9 @@ urlpatterns = [
         name="blog"
     ),
     path(
-        route='terms-of-service/',
-        view=TermsView.as_view(),
-        name="tos"
-    ),
-    path(
-        route='privacy-policy/',
-        view=PrivacyView.as_view(),
-        name="privacy"
+        route='page/<slug>',
+        view=PageView.as_view(),
+        name="page"
     ),
     path(
         route='support/',

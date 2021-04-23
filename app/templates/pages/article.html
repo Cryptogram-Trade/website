@@ -1,0 +1,24 @@
+{% extends "pages/base.html" %}
+
+{% block body %}
+<article>
+<div class="hero bg-gradient">
+  <div class="container content">
+    <div class="row">
+      <div class="col-lg-6 offset-3 text-center">
+        <h1>{% block title %}{% endblock %}</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-8 offset-2">
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+  </div>
+</section>
+</article>
+{% endblock %}
