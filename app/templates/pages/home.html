@@ -2873,7 +2873,8 @@
             </svg>
           </div>
           <h3 class="pt-4">Shrimpy Tools</h3>
-          <p class="text-lead">We love Shrimpy so much that we want users to benefit of their top most services. If you're a Shrimpy user, enhance your experience with Crawfish, the Shrimpy with super powers.</p>
+          <p class="text-lead">We love Shrimpy so much that we want users to benefit of their top most services. If you're a Shrimpy user, enhance your experience with our enhancement of <a href="{% url 'shrimpy_leaders' %}">Shrimpy leaders</a>, it's like Shrimpy with super powers.</p>
+          <a href="{% url 'shrimpy_leaders' %}" class="btn btn-primary">View our Shrimpy Services</a>
         </div>
         <div class="col-md-4 text-center col-sm-12 pb-5 pb-sm-0">
           <div class="icon bg-gradient">
@@ -2884,6 +2885,7 @@
           </div>
           <h3 class="pt-4">Buy Crypto</h3>
           <p class="text-lead">We help you buying crypto anonymously. We provide you with a bank account where to deposit, we send you crypto in exchange.</p>
+          <a href="#" class="btn btn-primary disabled">Coming soon</a>
         </div>
         <div class="col-md-4 text-center col-sm-12 pb-sm-0">
           <div class="icon bg-gradient">
@@ -2893,7 +2895,8 @@
             </svg>
           </div>
           <h3 class="pt-4">Stay Anonymous</h3>
-          <p class="text-lead">We will never ask you who you are, no ID, no name, no phone number. An anonymous email is enough.</p>
+          <p class="text-lead">We will never ask you who you are, no ID, no name, no phone number. An anonymous email is all you need.</p>
+          <a href="{% url "account_signup" %}" class="btn btn-primary">Create an account</a>
         </div>
       </div>
     </div>
@@ -2920,7 +2923,8 @@
             Shrimpy's greatest leaders are on Binance. As a US citizen you
             have no access to them. Of course you could
           </p>
-          <a class="mt-5 btn btn-lg btn-primary" href="{% url "account_signup" %}">Sign Up</a>
+          <a class="mt-5 btn btn-lg btn-primary" href="{% url "account_signup" %}">Sign Up for Free</a>
+          <a class="mt-5 btn btn-lg btn-secondary" href="{% url "shrimpy_leaders" %}">View our Shrimpy Services</a>
         </div>
       </div>
     </div>
