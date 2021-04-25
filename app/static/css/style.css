@@ -298,3 +298,12 @@ body {
 .cover-container form {
   text-align: left !important;
 }
+
+/* Custom */
+
+.text-truncate.text-truncate--4 {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}

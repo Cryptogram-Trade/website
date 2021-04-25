@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'djstripe',
     'captcha',
     'users',
+    'trade',
 ]
 
 ########################################

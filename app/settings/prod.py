@@ -1,0 +1,6 @@
+from .base import *
+
+EMAIL_HOST = "in-v3.mailjet.com"
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "7db253dcef5ada9e69c9cd145363a65f"
+EMAIL_HOST_PASSWORD = "3ea435d54e31c76a4361f1113108db61"

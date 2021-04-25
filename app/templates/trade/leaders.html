@@ -1,0 +1,30 @@
+{% extends "pages/article.html" %}
+
+{% block title %}Social leaders for crypto trading{% endblock %}
+
+{% block content %}
+<h1>{{ leaders.count }} leaders to automate your profits</h1>
+<div class="row row-cols-1 row-cols-md-2">
+  {% for leader in leaders %}
+  <div class=col>
+    <article class="card shadow-sm p-3 mb-5 bg-body rounded">
+      <img src="{{ leader.picture }}" class="avatar-big card-img-top" alt="trade with {{ leader.name }}">
+      <div class="card-body">
+        <h2 class="card-title">{{ leader.name }}</h2>
+        <p class="card-text text-truncate text-truncate--4" title="{{ leader.description }}">
+          {% if leader.description %}
+          {{ leader.description }}
+          {% else %}
+          {{ leader.name }} is a Crypto trader!
+          {% endif %}
+        </p>
+        <a href="#" class="btn btn-primary">View {{ leader.name }}'s profile</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">{{ leader.followers_count }} followers</small>
+      </div>
+    </article>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
