@@ -1,0 +1,38 @@
+{% extends "pages/article.html" %}
+
+{% block title %}{{ leader.name }} is a leader on Cryptogram{% endblock %}
+
+{% block content %}
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item"><a href="{% url 'shrimpy_leaders' %}">Leaders</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{ leader.name }}</li>
+  </ol>
+</nav>
+
+<h2>{{ leader.name }}'s profile for crypto automation</h2>
+
+<article class="card shadow-sm p-3 mb-5 bg-body rounded">
+  <img src="{{ leader.picture }}" class="avatar-big card-img-top" alt="trade with {{ leader.name }}">
+  <div class="card-body">
+    <h2 class="card-title">{{ leader.name }}</h2>
+    <p class="card-text" title="{{ leader.description }}">
+      {% if leader.description %}
+      {{ leader.description }}
+      {% else %}
+      {{ leader.name }} is a Crypto trader!
+      {% endif %}
+    </p>
+    <ul>
+      <li>Performance in 1 day: {{ leader.percentage_day }}%</li>
+      <li>Performance for the past week: {{ leader.percentage_week }}%</li>
+      <li>Performance for this month: {{ leader.percentage_month }}%</li>
+    </ul>
+  </div>
+  <div class="card-footer">
+    <small class="text-muted">{{ leader.followers_count }} followers</small>
+  </div>
+</article>
+{% endblock %}

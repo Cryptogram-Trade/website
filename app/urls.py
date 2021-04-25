@@ -9,7 +9,7 @@ from views import (
     SiteMapView,
     RobotsView
 )
-from trade.views import LeadersView
+from trade.views import LeadersView, LeaderView
 
 urlpatterns = [
     path(
@@ -21,6 +21,11 @@ urlpatterns = [
         route='shrimpy/leaders',
         view=LeadersView.as_view(),
         name="shrimpy_leaders"
+    ),
+    path(
+        route='shrimpy/leader/<slug>',
+        view=LeaderView.as_view(),
+        name="shrimpy_leader"
     ),
     path(
         route='blog/<slug>',

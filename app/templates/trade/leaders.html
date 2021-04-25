@@ -18,7 +18,7 @@
           {{ leader.name }} is a Crypto trader!
           {% endif %}
         </p>
-        <a href="#" class="btn btn-primary">View {{ leader.name }}'s profile</a>
+        <a href="{% url "shrimpy_leader" leader.slug %}" class="btn btn-primary">View {{ leader.name }}'s profile</a>
       </div>
       <div class="card-footer">
         <small class="text-muted">{{ leader.followers_count }} followers</small>

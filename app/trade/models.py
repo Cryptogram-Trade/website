@@ -1,4 +1,5 @@
 from django.db import models
+from django.template.defaultfilters import slugify
 
 
 class ShrimpyLeader(models.Model):
@@ -6,6 +7,7 @@ class ShrimpyLeader(models.Model):
     https://www.shrimpy.io/api/leaders
     """
     uid = models.PositiveIntegerField()
+    slug = models.SlugField(max_length=100)
     name = models.CharField(max_length=100)
     picture_hash = models.CharField(max_length=255)
     exchange = models.CharField(max_length=100)
@@ -27,6 +29,23 @@ class ShrimpyLeader(models.Model):
             return f"https://assets.shrimpy.io/leader_profile_picture/{self.picture_hash}/{size}.png"
         else:
             return "/static/images/c.svg"
+    
+
+    @property
+    def percentage_day(self):
+        return round(self.performance_day * 100)
+
+    @property
+    def percentage_week(self):
+        return round(self.performance_week * 100)
+
+    @property
+    def percentage_month(self):
+        return round(self.performance_month * 100)
 
     def __str__(self):
         return self.name
+    
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.name)
+        return super().save(*args, **kwargs)
