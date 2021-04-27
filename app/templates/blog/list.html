@@ -14,7 +14,7 @@
         <p class="card-text text-truncate text-truncate--4" title="{{ article.body }}">
           {{ article.body }}
         </p>
-        <a href="{% url "blog:article" "shrimpy-for-binance-us-users" %}" class="btn btn-primary">Read {{ article.title }}</a>
+        <a href="{% url "blog:article" article.slug %}" class="btn btn-primary">Read {{ article.title }}</a>
       </div>
     </article>
   </div>
