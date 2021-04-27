@@ -12,7 +12,6 @@ deploy:
 		docker-compose down &&\
 		docker-compose up -d &&\
 		echo 'completed!'"
-	make remote-migrate
 	@echo "App deployed"
 
 remote-migrate:

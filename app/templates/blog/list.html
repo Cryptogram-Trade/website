@@ -1,0 +1,23 @@
+{% extends "pages/article.html" %}
+
+{% block title %}Crypto News about Bitcoin, Shrimpy and more{% endblock %}
+
+{% block content %}
+<h1>The news about cryptos</h1>
+<div class="row row-cols-1 row-cols-md-2">
+  {% for article in articles %}
+  <div class=col>
+    <article class="card shadow-sm p-3 mb-5 bg-body rounded">
+      <img src="{{ article.image }}" class="card-img-top" alt="Cryptogram article about {{ article.title }}">
+      <div class="card-body">
+        <h2 class="card-title">{{ article.title }}</h2>
+        <p class="card-text text-truncate text-truncate--4" title="{{ article.body }}">
+          {{ article.body }}
+        </p>
+        <a href="{% url "blog:article" "shrimpy-for-binance-us-users" %}" class="btn btn-primary">Read {{ article.title }}</a>
+      </div>
+    </article>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -3,7 +3,6 @@ from django.urls import path, include
 
 from views import (
     HomeView,
-    BlogView,
     PageView,
     SupportView,
     SiteMapView,
@@ -28,11 +27,6 @@ urlpatterns = [
         name="shrimpy_leader"
     ),
     path(
-        route='blog/<slug>',
-        view=BlogView.as_view(),
-        name="blog"
-    ),
-    path(
         route='page/<slug>',
         view=PageView.as_view(),
         name="page"
@@ -51,6 +45,13 @@ urlpatterns = [
         route='robots.txt',
         view=RobotsView.as_view(),
         name="robots"
+    ),
+    path(
+        route="blog/",
+        view=include(
+            ('blog.urls', 'blog'),
+            namespace="blog"
+        )
     ),
     path(
         route="users/",
